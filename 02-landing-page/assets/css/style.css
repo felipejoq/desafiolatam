@@ -48,7 +48,8 @@ footer a {
 }
 
 #wrap {
-    width: 1200px;
+    width: 90%;
+    max-width: 1200px;
     align-items: center;
     background: #ffffff;
 }
@@ -64,15 +65,62 @@ footer a {
 .card {
     background: #fff;
     padding: 1rem;
-    border: 0.1rem solid #ccc;
     border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
-.card-imagen {
+.card-image {
     width: 30rem;
 }
 
-.card-imagen img {
+.card-image img {
     width: 100%;
     border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        padding: 0;
+    }
+    header {
+        padding: 8rem 0 1rem;
+        margin: 0;
+        background: #000 url("../img/logo.jpg") no-repeat 50% 10%;
+        text-align: center;
+        height: auto;
+    }
+    #wrap {
+        width: 100%;
+    }
+    .card {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header {
+        padding: 8rem 0 1rem;
+        margin: 0;
+        background: #000 url("../img/logo.jpg") no-repeat 50% 10%;
+        text-align: center;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 1.3rem;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .card-image {
+        width: 90%;
+    }
 }
