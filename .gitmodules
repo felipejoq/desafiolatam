@@ -1,0 +1,3 @@
+[submodule "05-github-challenge"]
+	path = 05-github-challenge
+	url = git@github.com:felipejoq/fdsw-github-dsafiolatam.git
